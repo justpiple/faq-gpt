@@ -29,6 +29,8 @@ ENV DATABASE_URL="file:/app/data/dev.db"
 
 RUN mkdir -p /app/data && chown -R node:node /app/data
 
+COPY --chown=node:node dev.db /app/data/dev.db
+
 COPY --from=builder --chown=node:node /app/node_modules ./node_modules
 COPY --from=builder --chown=node:node /app/prisma ./prisma
 COPY --from=builder --chown=node:node /app/prisma.config.js ./prisma.config.js

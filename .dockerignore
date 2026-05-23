@@ -3,8 +3,10 @@ npm-debug.log
 pnpm-debug.log
 .env
 *.db
+!dev.db
 *.db-journal
 .git
 .gitignore
 Dockerfile
 .dockerignore
+
