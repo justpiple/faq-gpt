@@ -7,13 +7,8 @@ import {
 
 const router = express.Router();
 
-// Get all FAQs
 router.get('/all', getAllFaq);
-
-// Get the latest FAQ version
 router.get('/version', getFaqVersion);
-
-// Log an unknown question
 router.post('/unknown', reportUnknownQuestion);
 
 export default router;
