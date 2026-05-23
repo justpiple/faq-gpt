@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+pnpm-debug.log
+.env
+*.db
+*.db-journal
+.git
+.gitignore
+Dockerfile
+.dockerignore
+docker-entrypoint.sh
