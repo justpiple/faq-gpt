@@ -1,0 +1,36 @@
+datasource db {
+  provider = "sqlite"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Faq {
+  id        Int      @id @default(autoincrement())
+  question  String
+  answer    String
+  category  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("faqs")
+}
+
+model FaqVersion {
+  id        Int      @id @default(autoincrement())
+  version   String
+  updatedAt DateTime @default(now())
+
+  @@map("faq_versions")
+}
+
+model UnknownQuestion {
+  id        Int      @id @default(autoincrement())
+  question  String
+  sessionId String?
+  userId    String?
+  createdAt DateTime @default(now())
+
+  @@map("unknown_questions")
+}

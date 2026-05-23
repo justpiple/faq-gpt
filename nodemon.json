@@ -1,0 +1,15 @@
+{
+  "ignore": [
+    "*.db",
+    "*.db-journal",
+    "*.db-wal",
+    "*.db-shm",
+    "prisma/dev.db*",
+    "prisma/migrations/*",
+    "node_modules"
+  ],
+  "watch": [
+    "src"
+  ],
+  "ext": "js,json"
+}
