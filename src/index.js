@@ -68,13 +68,11 @@ const faqData = [
   }
 ];
 
-// Load environment variables
 dotenv.config();
 
 const app = express();
 let PORT = process.env.PORT || 3000;
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
