@@ -29,13 +29,13 @@ importers:
       morgan:
         specifier: ^1.10.1
         version: 1.10.1
+      prisma:
+        specifier: ^7.8.0
+        version: 7.8.0(@types/react@19.2.15)(better-sqlite3@12.10.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
     devDependencies:
       nodemon:
         specifier: ^3.1.14
         version: 3.1.14
-      prisma:
-        specifier: ^7.8.0
-        version: 7.8.0(@types/react@19.2.15)(better-sqlite3@12.10.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
 
 packages:
 
