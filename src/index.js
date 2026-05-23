@@ -72,10 +72,7 @@ const faqData = [
 dotenv.config();
 
 const app = express();
-let PORT = process.env.PORT || 3001;
-if (String(PORT) === '3000') {
-  PORT = 3001;
-}
+let PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
